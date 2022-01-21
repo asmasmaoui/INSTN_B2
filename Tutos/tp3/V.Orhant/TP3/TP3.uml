@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uwffkHbgEeywluzzSN9Aqg" name="TP3">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_u3QO4HbgEeywluzzSN9Aqg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_uyGpIHbgEeywluzzSN9Aqg" name="MotorControlStateMachine">
+    <region xmi:type="uml:Region" xmi:id="_uzhlcHbgEeywluzzSN9Aqg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_3Tl2IHbtEeywluzzSN9Aqg" source="_XqJjMHbtEeywluzzSN9Aqg" target="_YhQKUHbtEeywluzzSN9Aqg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_KCygMHbuEeywluzzSN9Aqg" name="TriggerRequestProcessor" event="_S71kgHbuEeywluzzSN9Aqg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_iDVIEHbuEeywluzzSN9Aqg" source="_YhQKUHbtEeywluzzSN9Aqg" target="_XqJjMHbtEeywluzzSN9Aqg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_vxdsAHbuEeywluzzSN9Aqg" event="_6BS9EHbuEeywluzzSN9Aqg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_j_qR4HbuEeywluzzSN9Aqg" name="SystemStart" source="_nRHRAHbtEeywluzzSN9Aqg" target="_XqJjMHbtEeywluzzSN9Aqg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8MXRAHbvEeywluzzSN9Aqg" source="_YhQKUHbtEeywluzzSN9Aqg" target="_oyWaQHbtEeywluzzSN9Aqg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_lt-W8Hd0EeyPxOpoHV7nVg" guard="_EIrwcHd2EeyPxOpoHV7nVg" kind="local" source="_YhQKUHbtEeywluzzSN9Aqg" target="_XqJjMHbtEeywluzzSN9Aqg">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_EIrwcHd2EeyPxOpoHV7nVg" name="DestinationReached"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_zgTMcHd2EeyPxOpoHV7nVg" source="_mJYOoHd2EeyPxOpoHV7nVg" target="_p3sTcHd2EeyPxOpoHV7nVg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_8rHWMHd2EeyPxOpoHV7nVg" name="OpenDoorTrigger" event="_MKTBAHd3EeyPxOpoHV7nVg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_cLtPIHd3EeyPxOpoHV7nVg" name="FiveSecondExpired" source="_p3sTcHd2EeyPxOpoHV7nVg" target="_mJYOoHd2EeyPxOpoHV7nVg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_wKqQ4Hd3EeyPxOpoHV7nVg" name="FiveSecondExpiredTrigger" visibility="private" event="_vIMHQHd3EeyPxOpoHV7nVg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_xNcuIHd4EeyPxOpoHV7nVg" name="SystemStart" source="_oGwPYHd4EeyPxOpoHV7nVg" target="_mJYOoHd2EeyPxOpoHV7nVg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yFWmgHd4EeyPxOpoHV7nVg" name="SystemShutDown" source="_p3sTcHd2EeyPxOpoHV7nVg" target="_okdfEHd4EeyPxOpoHV7nVg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_I3DAMHd6EeyPxOpoHV7nVg" source="_ALIY8Hd6EeyPxOpoHV7nVg" target="__LoDwHd5EeyPxOpoHV7nVg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eIzGkHd6EeyPxOpoHV7nVg" source="__LoDwHd5EeyPxOpoHV7nVg" target="_USlPYHd6EeyPxOpoHV7nVg">
+        <trigger xmi:type="uml:Trigger" xmi:id="__v2OUHd9EeyPxOpoHV7nVg" name="RequestPoolTrigger" event="_ggPiQHd-EeyPxOpoHV7nVg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ip4kwHd9EeyPxOpoHV7nVg" name="TravelPlanEmpty" source="_USlPYHd6EeyPxOpoHV7nVg" target="__LoDwHd5EeyPxOpoHV7nVg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0UFVoHd9EeyPxOpoHV7nVg" source="_USlPYHd6EeyPxOpoHV7nVg" target="_zodlwHd9EeyPxOpoHV7nVg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_zZTdgHd_EeyPxOpoHV7nVg" source="_YhQKUHbtEeywluzzSN9Aqg" target="_YhQKUHbtEeywluzzSN9Aqg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_PzuPsHeAEeyPxOpoHV7nVg" name="UpdateMoveTrigger" event="_PgApgHeAEeyPxOpoHV7nVg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_fKlE8HeAEeyPxOpoHV7nVg" source="_p3sTcHd2EeyPxOpoHV7nVg" target="_p3sTcHd2EeyPxOpoHV7nVg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_sECDoHeAEeyPxOpoHV7nVg" name="PassengerEntranceTrigger" event="_o2ZqAHeAEeyPxOpoHV7nVg"/>
+      </transition>
+      <subvertex xmi:type="uml:State" xmi:id="_XqJjMHbtEeywluzzSN9Aqg" name="stopped">
+        <entry xmi:type="uml:ProtocolStateMachine" xmi:id="_o0vVAHbvEeywluzzSN9Aqg" specification="__OQq0HbmEeywluzzSN9Aqg"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_YhQKUHbtEeywluzzSN9Aqg" name="moving"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_nRHRAHbtEeywluzzSN9Aqg" name="StartSystem"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_oyWaQHbtEeywluzzSN9Aqg" name="ShutDownSystem"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mJYOoHd2EeyPxOpoHV7nVg" name="DoorClosed"/>
+      <subvertex xmi:type="uml:State" xmi:id="_p3sTcHd2EeyPxOpoHV7nVg" name="DoorOpen"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_oGwPYHd4EeyPxOpoHV7nVg" name="StartSystem"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_okdfEHd4EeyPxOpoHV7nVg" name="ShutDownSystem"/>
+      <subvertex xmi:type="uml:State" xmi:id="__LoDwHd5EeyPxOpoHV7nVg" name="idle"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_ALIY8Hd6EeyPxOpoHV7nVg" name="Initial19"/>
+      <subvertex xmi:type="uml:State" xmi:id="_USlPYHd6EeyPxOpoHV7nVg" name="ProcessingRequest">
+        <region xmi:type="uml:Region" xmi:id="_3Sl1gHd6EeyPxOpoHV7nVg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_JxVowHd7EeyPxOpoHV7nVg" name="DestinationReached" source="_3SnqsHd6EeyPxOpoHV7nVg" target="_4FWvMHd6EeyPxOpoHV7nVg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_HqpMkHd8EeyPxOpoHV7nVg" source="_E1YsIHd7EeyPxOpoHV7nVg" target="_dHQUkHd7EeyPxOpoHV7nVg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_JLNAYHd8EeyPxOpoHV7nVg" name="Yes" source="_dHQUkHd7EeyPxOpoHV7nVg" target="_3SnqsHd6EeyPxOpoHV7nVg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_OYrK0Hd8EeyPxOpoHV7nVg" name="No" source="_dHQUkHd7EeyPxOpoHV7nVg" target="_4FWvMHd6EeyPxOpoHV7nVg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_vsdfsHd8EeyPxOpoHV7nVg" source="_4FWvMHd6EeyPxOpoHV7nVg" target="_ocqRIHd8EeyPxOpoHV7nVg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_3SnqsHd6EeyPxOpoHV7nVg" name="MovingElevator"/>
+          <subvertex xmi:type="uml:State" xmi:id="_4FWvMHd6EeyPxOpoHV7nVg" name="ControlDoor"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_E1YsIHd7EeyPxOpoHV7nVg" name="StartProcessing"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_dHQUkHd7EeyPxOpoHV7nVg" name="CurrentDifferentFromDestination" kind="choice"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_ocqRIHd8EeyPxOpoHV7nVg" name="EndProcessing"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_zodlwHd9EeyPxOpoHV7nVg" name="FinalState24"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8JSFoHbgEeywluzzSN9Aqg" name="Signals">
+    <packagedElement xmi:type="uml:Signal" xmi:id="_D4yH8HbhEeywluzzSN9Aqg" name="RequestProcessorMoveSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_rpKs0HbhEeywluzzSN9Aqg" name="EnvironmentStoppedSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_4TFasHbhEeywluzzSN9Aqg" name="RequestProcessorUpdateMoveSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_HBKYsHbiEeywluzzSN9Aqg" name="MotorControlStoppedNotification"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_eVs2MHbiEeywluzzSN9Aqg" name="RequestProcessorOpenDoorSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_sL9bYHbiEeywluzzSN9Aqg" name="EnvironmentPassengerGetInElevatorSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_2tlnEHbiEeywluzzSN9Aqg" name="EntranceControlDoorClosedNotification"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_PgwlwHbjEeywluzzSN9Aqg" name="RequestPoolPlanUpdateSignal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Etez8HbkEeywluzzSN9Aqg" name="RequestProcessorCloseDoorSignal"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_S71kgHbuEeywluzzSN9Aqg" signal="_D4yH8HbhEeywluzzSN9Aqg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_6BS9EHbuEeywluzzSN9Aqg" signal="_rpKs0HbhEeywluzzSN9Aqg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MKTBAHd3EeyPxOpoHV7nVg" signal="_eVs2MHbiEeywluzzSN9Aqg"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_vIMHQHd3EeyPxOpoHV7nVg" name="FiveSecondExpiredEvent" visibility="private">
+      <when xmi:type="uml:TimeExpression" xmi:id="_UaT58Hd4EeyPxOpoHV7nVg">
+        <expr xmi:type="uml:LiteralInteger" xmi:id="_UaT58Xd4EeyPxOpoHV7nVg" name="OpenDuration" value="5"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ggPiQHd-EeyPxOpoHV7nVg" signal="_PgwlwHbjEeywluzzSN9Aqg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_PgApgHeAEeyPxOpoHV7nVg" signal="_4TFasHbhEeywluzzSN9Aqg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_o2ZqAHeAEeyPxOpoHV7nVg" signal="_sL9bYHbiEeywluzzSN9Aqg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_o3pgEHbkEeywluzzSN9Aqg" name="Interfaces">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_1dgNUHbkEeywluzzSN9Aqg" name="IMotorRequestHandler">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_o0x80HblEeywluzzSN9Aqg" name="ReqProMove" signal="_D4yH8HbhEeywluzzSN9Aqg"/>
+      <ownedReception xmi:type="uml:Reception" xmi:id="_2cXM0HblEeywluzzSN9Aqg" name="ReqProUpdMove" signal="_4TFasHbhEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_NhpGUHbmEeywluzzSN9Aqg" name="IEnvironmentHandler">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_UhZtwHbmEeywluzzSN9Aqg" name="EnvStop" signal="_rpKs0HbhEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_y4ZhYHbmEeywluzzSN9Aqg" name="IMotContNotification" visibility="public">
+      <ownedReception xmi:type="uml:Reception" xmi:id="__OQq0HbmEeywluzzSN9Aqg" name="MotConStopNotif" method="_o0vVAHbvEeywluzzSN9Aqg" signal="_HBKYsHbiEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_el9GcHbnEeywluzzSN9Aqg" name="IEntranceControlHandler">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_gVZq0HbnEeywluzzSN9Aqg" name="ReqProcOpenDoor" signal="_eVs2MHbiEeywluzzSN9Aqg"/>
+      <ownedReception xmi:type="uml:Reception" xmi:id="_yhz7cHboEeywluzzSN9Aqg" name="ReqProcCloseDoorSignal" signal="_Etez8HbkEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_5zvGYHbnEeywluzzSN9Aqg" name="IEnvironmentPassengerHandler">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_7ljpUHbnEeywluzzSN9Aqg" name="EnvPasGetInElevSignal" signal="_sL9bYHbiEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_XUM6oHboEeywluzzSN9Aqg" name="ICloseDoorNotification">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_c1xs0HboEeywluzzSN9Aqg" name="EntraContDoorCloseNotif" signal="_2tlnEHbiEeywluzzSN9Aqg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_DWc9UHbpEeywluzzSN9Aqg" name="IRequestPoolHandler">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_GBg1YHbpEeywluzzSN9Aqg" name="ReqPoolPlanUpdSigal" signal="_PgwlwHbjEeywluzzSN9Aqg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jENBIHbsEeywluzzSN9Aqg" name="MotorControl" classifierBehavior="_nvXvwHbsEeywluzzSN9Aqg" isActive="true">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_nvXvwHbsEeywluzzSN9Aqg" name="MotorControlStateMachine"/>
+  </packagedElement>
+</uml:Model>
