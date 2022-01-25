@@ -1,0 +1,16 @@
+Class {
+	fillColor: white;
+}
+
+Property  {
+	maskLabel : name;
+	fillColor: #e0e0a0;
+}
+
+Property > Compartment[kind="internalstructure"] {
+	visible : false;
+}
+
+Compartment[type=StereotypeBrace] {
+	visible : true;
+}
