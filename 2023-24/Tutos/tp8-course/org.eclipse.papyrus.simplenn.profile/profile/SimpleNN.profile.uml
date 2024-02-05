@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5au88FhEEeunjL2xGyDi8w" name="SimpleNN" URI="http://www.eclipse.org/papyrus/SimpleNN/1" metaclassReference="_BsGWMFhFEeunjL2xGyDi8w _bM0XYFhFEeunjL2xGyDi8w">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jfcU4FhFEeunjL2xGyDi8w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CekDAFhHEeunjL2xGyDi8w" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CekDAVhHEeunjL2xGyDi8w" key="Version" value="0.0.0"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CekDAlhHEeunjL2xGyDi8w" key="Comment" value="&lt;undefined>"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CekDA1hHEeunjL2xGyDi8w" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CekDBFhHEeunjL2xGyDi8w" key="Date" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CekDBVhHEeunjL2xGyDi8w" key="Author" value="&lt;undefined>"/>
+    </eAnnotations>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_BsGWMFhFEeunjL2xGyDi8w" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_bM0XYFhFEeunjL2xGyDi8w" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_5gbVQFhEEeunjL2xGyDi8w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_5gb8UFhEEeunjL2xGyDi8w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7q6P0FhEEeunjL2xGyDi8w" name="NeuralNetwork">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_SftpMGMNEeuMtaZ-B-afdw" name="NoOperations">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Sfu3UGMNEeuMtaZ-B-afdw" name="constraintSpec">
+        <language>OCL</language>
+        <body>self.base_Class.ownedOperation->size() = 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_VpcwUGPIEeu6YJoMUVVz6g" name="all attributes are layers">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpfzoGPIEeu6YJoMUVVz6g" name="constraintSpec">
+        <language>OCL</language>
+        <body>self.base_Class.ownedAttribute->forAll(attr | attr.getAppliedSubstereotypes(attr.getApplicableStereotype('SimpleNN::Layer'))->notEmpty())</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Fk0UMFhFEeunjL2xGyDi8w" name="base_Class" association="_Fku0oFhFEeunjL2xGyDi8w">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fk0UMVhFEeunjL2xGyDi8w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Fku0oFhFEeunjL2xGyDi8w" name="E_NeuralNetwork_Class5" memberEnd="_FkyfAFhFEeunjL2xGyDi8w _Fk0UMFhFEeunjL2xGyDi8w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_FkyfAFhFEeunjL2xGyDi8w" name="extension_NeuralNetwork" type="_7q6P0FhEEeunjL2xGyDi8w" aggregation="composite" association="_Fku0oFhFEeunjL2xGyDi8w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_IYLzsFhFEeunjL2xGyDi8w" name="Conv1D">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NzdEcGPIEeu6YJoMUVVz6g" general="__e3kgGPHEeu6YJoMUVVz6g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Cejb8FhHEeunjL2xGyDi8w" name="filters">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mOK6EFhHEeunjL2xGyDi8w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IjVB0FhHEeunjL2xGyDi8w" name="kernel_size">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m_lI4FhHEeunjL2xGyDi8w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_LGRKkFhFEeunjL2xGyDi8w" name="LSTM">
+    <generalization xmi:type="uml:Generalization" xmi:id="_M9uWUGPIEeu6YJoMUVVz6g" general="__e3kgGPHEeu6YJoMUVVz6g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_V7PeIFhHEeunjL2xGyDi8w" name="useBias" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nserIFhHEeunjL2xGyDi8w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fc2-UFhHEeunjL2xGyDi8w" name="activationFct" type="_OKgswFhHEeunjL2xGyDi8w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_onh-IFhHEeunjL2xGyDi8w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_dU3pAFhFEeunjL2xGyDi8w" name="E_Layer_Property1" memberEnd="_dU4QEFhFEeunjL2xGyDi8w _CQk3IGPIEeu6YJoMUVVz6g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dU4QEFhFEeunjL2xGyDi8w" name="extension_Layer" type="__e3kgGPHEeu6YJoMUVVz6g" aggregation="composite" association="_dU3pAFhFEeunjL2xGyDi8w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKgswFhHEeunjL2xGyDi8w" name="EActivationFCT">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RLOrwFhHEeunjL2xGyDi8w" name="TANH"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TTCFwFhHEeunjL2xGyDi8w" name="LINEAR"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="__e3kgGPHEeu6YJoMUVVz6g" name="Layer" isAbstract="true">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_Ynx-MGMOEeuMtaZ-B-afdw" name="NoType">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YnylQGMOEeuMtaZ-B-afdw" name="constraintSpec">
+        <language>OCL</language>
+        <body>self.base_Property.type = null</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CQk3IGPIEeu6YJoMUVVz6g" name="base_Property" association="_dU3pAFhFEeunjL2xGyDi8w">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Profile>

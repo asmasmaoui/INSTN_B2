@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.uri_mapping">
+		<mapping
+			source="pathmap://NN_PROFILES/"
+			target="platform:/plugin/org.eclipse.papyrus.simplenn.profile/profile/"/>
+	</extension>
+	
+	<extension point="org.eclipse.uml2.uml.generated_package">
+		<profile
+			uri="http://www.eclipse.org/papyrus/SimpleNN/1"
+			location="pathmap://NN_PROFILES/SimpleNN.profile.uml#_5au88FhEEeunjL2xGyDi8w"/>
+	</extension>
+
+	<extension
+			point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+		<profile
+			description="SimpleNN profile"
+			name="SimpleNN profile"
+			iconpath="icons/aiml-16x16.png"
+			path="pathmap://NN_PROFILES/SimpleNN.profile.uml"
+			provider="Eclipse Modeling Project"/>
+	</extension>
+
+	<extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SimpleNN -->
+      <package
+            uri="http://www.eclipse.org/papyrus/SimpleNN/1"
+            class="org.eclipse.papyrus.simplenn.profile.SimpleNN.SimpleNNPackage"
+            genModel="profile/SimpleNN.genmodel"/>
+	</extension>
+
+</plugin>

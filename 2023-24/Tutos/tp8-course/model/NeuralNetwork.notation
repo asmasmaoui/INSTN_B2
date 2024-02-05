@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_X4YbcFsUEeuxcd4JFRQh4w" type="CompositeStructure" name="Composite Structure Diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_aqPfEFsUEeuxcd4JFRQh4w" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aqQGIFsUEeuxcd4JFRQh4w" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_aqQGIVsUEeuxcd4JFRQh4w" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aqQGIlsUEeuxcd4JFRQh4w" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_aqQGI1sUEeuxcd4JFRQh4w" type="Class_StructureCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_ZCKRgFsVEeuxcd4JFRQh4w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZCKRglsVEeuxcd4JFRQh4w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZCKRg1sVEeuxcd4JFRQh4w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZCKRhFsVEeuxcd4JFRQh4w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZCKRhVsVEeuxcd4JFRQh4w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZCKRhlsVEeuxcd4JFRQh4w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZCKRh1sVEeuxcd4JFRQh4w"/>
+          </children>
+          <element xmi:type="uml:Property" href="NeuralNetwork.uml#_ZCEK4FsVEeuxcd4JFRQh4w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZCKRgVsVEeuxcd4JFRQh4w" x="74" y="37" width="200"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gQReAFsVEeuxcd4JFRQh4w" type="Property_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_gQReAlsVEeuxcd4JFRQh4w" type="Property_NameLabel"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_gQReA1sVEeuxcd4JFRQh4w" type="Property_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gQReBFsVEeuxcd4JFRQh4w" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_gQReBVsVEeuxcd4JFRQh4w" type="Property_StructureCompartment">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_gQReBlsVEeuxcd4JFRQh4w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gQReB1sVEeuxcd4JFRQh4w"/>
+          </children>
+          <element xmi:type="uml:Property" href="NeuralNetwork.uml#_gQNMkFsVEeuxcd4JFRQh4w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gQReAVsVEeuxcd4JFRQh4w" x="274" y="177" width="260" height="40"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_aqQGJFsUEeuxcd4JFRQh4w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aqQGJVsUEeuxcd4JFRQh4w"/>
+      </children>
+      <element xmi:type="uml:Class" href="NeuralNetwork.uml#_aqOQ8FsUEeuxcd4JFRQh4w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aqPfEVsUEeuxcd4JFRQh4w" x="100" y="60" width="621" height="301"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_X4YbcVsUEeuxcd4JFRQh4w" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_X4YbclsUEeuxcd4JFRQh4w"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_X4Ybc1sUEeuxcd4JFRQh4w" diagramKindId="org.eclipse.papyrus.uml.diagram.compositeStructure.root.package">
+      <owner xmi:type="uml:Model" href="NeuralNetwork.uml#_X4M1QFsUEeuxcd4JFRQh4w"/>
+    </styles>
+    <styles xmi:type="notation:EObjectListValueStyle" xmi:id="_0v4yQFsUEeuxcd4JFRQh4w" name="css_stylesheets" eObjectListValue="_8ii2QFsUEeuxcd4JFRQh4w"/>
+    <element xmi:type="uml:Model" href="NeuralNetwork.uml#_X4M1QFsUEeuxcd4JFRQh4w"/>
+    <edges xmi:type="notation:Connector" xmi:id="_33Q9cFsVEeuxcd4JFRQh4w" type="InformationFlow_Edge" source="_aqPfEFsUEeuxcd4JFRQh4w" target="_ZCKRgFsVEeuxcd4JFRQh4w">
+      <children xmi:type="notation:DecorationNode" xmi:id="_33Q9c1sVEeuxcd4JFRQh4w" type="InformationFlow_ConveyedLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SOBYFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_33Q9dFsVEeuxcd4JFRQh4w" y="30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_33Q9dVsVEeuxcd4JFRQh4w" type="InformationFlow_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SVWIFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_33Q9dlsVEeuxcd4JFRQh4w" y="15"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_33Q9d1sVEeuxcd4JFRQh4w" type="InformationFlow_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7Scq4FsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_33Q9eFsVEeuxcd4JFRQh4w" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_33Q9cVsVEeuxcd4JFRQh4w"/>
+      <element xmi:type="uml:InformationFlow" href="NeuralNetwork.uml#_33PIQFsVEeuxcd4JFRQh4w"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_33Q9clsVEeuxcd4JFRQh4w" points="[100, 160, -643984, -643984]$[180, 160, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_33gOAFsVEeuxcd4JFRQh4w" id="(0.0,0.33222591362126247)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_33gOAVsVEeuxcd4JFRQh4w" id="(0.0,0.36363636363636365)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_5FK7AFsVEeuxcd4JFRQh4w" type="InformationFlow_Edge" source="_ZCKRgFsVEeuxcd4JFRQh4w" target="_gQReAFsVEeuxcd4JFRQh4w" roundedBendpointsRadius="15" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5FK7A1sVEeuxcd4JFRQh4w" type="InformationFlow_ConveyedLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7R2N8FsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5FK7BFsVEeuxcd4JFRQh4w" x="1" y="28"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_5FK7BVsVEeuxcd4JFRQh4w" type="InformationFlow_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7R-w0FsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5FK7BlsVEeuxcd4JFRQh4w" x="1" y="13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_5FK7B1sVEeuxcd4JFRQh4w" type="InformationFlow_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SHTsFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5FK7CFsVEeuxcd4JFRQh4w" y="39"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5FK7AVsVEeuxcd4JFRQh4w"/>
+      <element xmi:type="uml:InformationFlow" href="NeuralNetwork.uml#_5FJs4FsVEeuxcd4JFRQh4w"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5FK7AlsVEeuxcd4JFRQh4w" points="[340, 194, -643984, -643984]$[340, 240, -643984, -643984]$[420, 240, -643984, -643984]$[420, 280, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5FdO4FsVEeuxcd4JFRQh4w" id="(0.8,0.9939393939393938)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5FdO4VsVEeuxcd4JFRQh4w" id="(0.07692307692307693,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_588QgFsVEeuxcd4JFRQh4w" type="InformationFlow_Edge" source="_gQReAFsVEeuxcd4JFRQh4w" target="_aqPfEFsUEeuxcd4JFRQh4w">
+      <children xmi:type="notation:DecorationNode" xmi:id="_588Qg1sVEeuxcd4JFRQh4w" type="InformationFlow_ConveyedLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SixgFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_588QhFsVEeuxcd4JFRQh4w" y="30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_588QhVsVEeuxcd4JFRQh4w" type="InformationFlow_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SpfMFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_588QhlsVEeuxcd4JFRQh4w" y="15"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_588Qh1sVEeuxcd4JFRQh4w" type="InformationFlow_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_7SuXsFsVEeuxcd4JFRQh4w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_588QiFsVEeuxcd4JFRQh4w" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_588QgVsVEeuxcd4JFRQh4w"/>
+      <element xmi:type="uml:InformationFlow" href="NeuralNetwork.uml#_587CYFsVEeuxcd4JFRQh4w"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_588QglsVEeuxcd4JFRQh4w" points="[660, 300, -643984, -643984]$[720, 300, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_59RAoFsVEeuxcd4JFRQh4w" id="(1.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_59RAoVsVEeuxcd4JFRQh4w" id="(1.0,0.7973421926910299)"/>
+    </edges>
+  </notation:Diagram>
+  <css:EmbeddedStyleSheet xmi:id="_8ii2QFsUEeuxcd4JFRQh4w" label="Neural Network" content="Class {&#xA;&#x9;fillColor: white;&#xA;}&#xA;&#xA;Property  {&#xA;&#x9;maskLabel : name;&#xA;&#x9;fillColor: #e0e0a0;&#xA;}&#xA;&#xA;Property > Compartment[kind=&quot;internalstructure&quot;] {&#xA;&#x9;visible : false;&#xA;}&#xA;&#xA;Compartment[type=StereotypeBrace] {&#xA;&#x9;visible : true;&#xA;}"/>
+</xmi:XMI>

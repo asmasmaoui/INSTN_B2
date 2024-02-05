@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:SimpleNN="http://www.eclipse.org/papyrus/SimpleNN/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_X4M1QFsUEeuxcd4JFRQh4w" name="NeuralNetwork">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_X49qQFsUEeuxcd4JFRQh4w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aqOQ8FsUEeuxcd4JFRQh4w" name="NeuralNetwork">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZCEK4FsVEeuxcd4JFRQh4w" name="l1" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gQNMkFsVEeuxcd4JFRQh4w" name="l2" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_33PIQFsVEeuxcd4JFRQh4w" informationSource="_aqOQ8FsUEeuxcd4JFRQh4w" informationTarget="_ZCEK4FsVEeuxcd4JFRQh4w"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_5FJs4FsVEeuxcd4JFRQh4w" informationSource="_ZCEK4FsVEeuxcd4JFRQh4w" informationTarget="_gQNMkFsVEeuxcd4JFRQh4w"/>
+    <packagedElement xmi:type="uml:InformationFlow" xmi:id="_587CYFsVEeuxcd4JFRQh4w" informationSource="_gQNMkFsVEeuxcd4JFRQh4w" informationTarget="_aqOQ8FsUEeuxcd4JFRQh4w"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rkd4UMQZEe6tcoUKwDvTAQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rkefYMQZEe6tcoUKwDvTAQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/SimpleNN/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.papyrus.simplenn.profile/profile/SimpleNN.profile.uml#_5au88FhEEeunjL2xGyDi8w"/>
+    </profileApplication>
+  </uml:Model>
+  <SimpleNN:NeuralNetwork xmi:id="_uUbZUMQrEe6N28loeEmy0g" base_Class="_aqOQ8FsUEeuxcd4JFRQh4w"/>
+  <SimpleNN:Conv1D xmi:id="_uUcAYMQrEe6N28loeEmy0g" base_Property="_ZCEK4FsVEeuxcd4JFRQh4w" filters="3" kernel_size="2"/>
+  <SimpleNN:LSTM xmi:id="_uUcAYcQrEe6N28loeEmy0g" base_Property="_gQNMkFsVEeuxcd4JFRQh4w" useBias="true"/>
+</xmi:XMI>
