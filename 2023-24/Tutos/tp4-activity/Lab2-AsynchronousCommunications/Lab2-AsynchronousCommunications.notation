@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <css:ModelStyleSheets xmi:id="_S8LQsPueEeOaTf6ppV18tA">
+    <stylesheets xmi:type="css:StyleSheetReference" xmi:id="_gs_WoHWEEeWKkurYeAKUOg" path="/Lab2-AsynchronousCommunications/model-style.css"/>
+  </css:ModelStyleSheets>
+  <notation:Diagram xmi:id="_EBs24HWEEeWCboWI4WlTOQ" type="PapyrusUMLClassDiagram" name="System Classes" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_HT61kHWEEeWCboWI4WlTOQ" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HT61knWEEeWCboWI4WlTOQ" type="Class_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HT61k3WEEeWCboWI4WlTOQ" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HT61lHWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HT61lXWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HT61lnWEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HT61l3WEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HT61mHWEEeWCboWI4WlTOQ" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_H7YowHWFEeWKkurYeAKUOg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="Lab2-AsynchronousCommunications.uml#_sXcfpguIEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_H7YowXWFEeWKkurYeAKUOg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_IhUnYHWFEeWKkurYeAKUOg" type="Reception_ReceptionLabel">
+          <element xmi:type="uml:Reception" href="Lab2-AsynchronousCommunications.uml#_YjTF0AuQEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_IhUnYXWFEeWKkurYeAKUOg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_I3V6sHWFEeWKkurYeAKUOg" type="Reception_ReceptionLabel">
+          <element xmi:type="uml:Reception" href="Lab2-AsynchronousCommunications.uml#_Zk0NMAuQEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_I3V6sXWFEeWKkurYeAKUOg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HT61mXWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HT61mnWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HT61m3WEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HT61nHWEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HT61nXWEEeWCboWI4WlTOQ" type="Class_NestedClassifierCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_HagwUHWFEeWKkurYeAKUOg" type="Class_ClassNestedClassifierLabel">
+          <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_CaZVAAuQEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_HagwUXWFEeWKkurYeAKUOg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HT61nnWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HT61n3WEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HT61oHWEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HT61oXWEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zC3OsXcXEey0SZNINl-EAQ" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zC3OsncXEey0SZNINl-EAQ" y="5"/>
+      </children>
+      <element xmi:type="uml:Class" href="Lab2-AsynchronousCommunications.uml#_cYmdEAuIEeWM194oc0LB3Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HT61kXWEEeWCboWI4WlTOQ" x="169" y="265" width="221" height="171"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_HUNwgHWEEeWCboWI4WlTOQ" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUNwgnWEEeWCboWI4WlTOQ" type="Class_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HUNwg3WEEeWCboWI4WlTOQ" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_kiwuUHWEEeWKkurYeAKUOg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="Lab2-AsynchronousCommunications.uml#_RdkXEHXiEeKEDJ51kkuoUw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_kiwuUXWEEeWKkurYeAKUOg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HUNwhHWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HUNwhXWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HUNwhnWEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HUNwh3WEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HUNwiHWEEeWCboWI4WlTOQ" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_vZ-vgHWEEeWKkurYeAKUOg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="Lab2-AsynchronousCommunications.uml#_neLukAuBEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vZ-vgXWEEeWKkurYeAKUOg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_wY6c8HWEEeWKkurYeAKUOg" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="Lab2-AsynchronousCommunications.uml#_LmEtUHXkEeKEDJ51kkuoUw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wY6c8XWEEeWKkurYeAKUOg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_x6XBkHWEEeWKkurYeAKUOg" type="Reception_ReceptionLabel">
+          <element xmi:type="uml:Reception" href="Lab2-AsynchronousCommunications.uml#_UplpUAuQEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_x6XBkXWEEeWKkurYeAKUOg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_yTprUHWEEeWKkurYeAKUOg" type="Reception_ReceptionLabel">
+          <element xmi:type="uml:Reception" href="Lab2-AsynchronousCommunications.uml#_VU0-sAuQEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_yTprUXWEEeWKkurYeAKUOg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HUNwiXWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HUNwinWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HUNwi3WEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HUNwjHWEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_HUNwjXWEEeWCboWI4WlTOQ" type="Class_NestedClassifierCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_5tV1sHWEEeWKkurYeAKUOg" type="Class_ClassNestedClassifierLabel">
+          <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_nb0-IAuBEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_5tV1sXWEEeWKkurYeAKUOg"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_HUNwjnWEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HUNwj3WEEeWCboWI4WlTOQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HUNwkHWEEeWCboWI4WlTOQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HUNwkXWEEeWCboWI4WlTOQ"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zC3Os3cXEey0SZNINl-EAQ" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zC3OtHcXEey0SZNINl-EAQ" y="5"/>
+      </children>
+      <element xmi:type="uml:Class" href="Lab2-AsynchronousCommunications.uml#_343NwHXhEeKEDJ51kkuoUw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HUNwgXWEEeWCboWI4WlTOQ" x="702" y="264" width="242" height="176"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_OE5ksHWFEeWKkurYeAKUOg" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_OE5ksnWFEeWKkurYeAKUOg" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zC5D4HcXEey0SZNINl-EAQ" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_RyoasHWFEeWKkurYeAKUOg" type="Signal_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_RyoasnWFEeWKkurYeAKUOg" type="Signal_NameLabel_CN"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_Ryoas3WFEeWKkurYeAKUOg" type="Signal_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_RyoatHWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_RyoatXWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_RyoatnWFEeWKkurYeAKUOg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ryoat3WFEeWKkurYeAKUOg"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_zC3OtXcXEey0SZNINl-EAQ" type="Signal_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zC3OtncXEey0SZNINl-EAQ" y="5"/>
+          </children>
+          <element xmi:type="uml:Signal" href="Lab2-AsynchronousCommunications.uml#_8Qv6YAuIEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RyoasXWFEeWKkurYeAKUOg" x="6" y="17" width="152" height="67"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_T4-cIHWFEeWKkurYeAKUOg" type="Signal_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_T4-cInWFEeWKkurYeAKUOg" type="Signal_NameLabel_CN"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_T4-cI3WFEeWKkurYeAKUOg" type="Signal_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_T4-cJHWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_T4-cJXWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_T4-cJnWFEeWKkurYeAKUOg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4-cJ3WFEeWKkurYeAKUOg"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_zC3Ot3cXEey0SZNINl-EAQ" type="Signal_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zC3OuHcXEey0SZNINl-EAQ" y="5"/>
+          </children>
+          <element xmi:type="uml:Signal" href="Lab2-AsynchronousCommunications.uml#_XanDoAuJEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4-cIXWFEeWKkurYeAKUOg" x="167" y="18" width="154" height="67"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZwfCEHWFEeWKkurYeAKUOg" type="Signal_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZwfCEnWFEeWKkurYeAKUOg" type="Signal_NameLabel_CN"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZwfCE3WFEeWKkurYeAKUOg" type="Signal_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZwfCFHWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZwfCFXWFEeWKkurYeAKUOg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZwfCFnWFEeWKkurYeAKUOg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZwfCF3WFEeWKkurYeAKUOg"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_zC3OuXcXEey0SZNINl-EAQ" type="Signal_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zC3OuncXEey0SZNINl-EAQ" y="5"/>
+          </children>
+          <element xmi:type="uml:Signal" href="Lab2-AsynchronousCommunications.uml#_zlqusAuKEeWM194oc0LB3Q"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZwfCEXWFEeWKkurYeAKUOg" x="329" y="18" width="154" height="67"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OE5ktHWFEeWKkurYeAKUOg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OE5ktXWFEeWKkurYeAKUOg"/>
+      </children>
+      <element xmi:type="uml:Package" href="Lab2-AsynchronousCommunications.uml#_ta3z8HWDEeWCboWI4WlTOQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OE5ksXWFEeWKkurYeAKUOg" x="283" y="103" width="500" height="129"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_EBs24XWEEeWCboWI4WlTOQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_EBs24nWEEeWCboWI4WlTOQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_zC3OsHcXEey0SZNINl-EAQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Package" href="Lab2-AsynchronousCommunications.uml#_wLFCsHXhEeKEDJ51kkuoUw"/>
+    </styles>
+    <element xmi:type="uml:Package" href="Lab2-AsynchronousCommunications.uml#_wLFCsHXhEeKEDJ51kkuoUw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_HUW6c3WEEeWCboWI4WlTOQ" type="Association_Edge" source="_HT61kHWEEeWCboWI4WlTOQ" target="_HUNwgHWEEeWCboWI4WlTOQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUW6dnWEEeWCboWI4WlTOQ" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUW6d3WEEeWCboWI4WlTOQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUgrcHWEEeWCboWI4WlTOQ" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUgrcXWEEeWCboWI4WlTOQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUgrcnWEEeWCboWI4WlTOQ" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUgrc3WEEeWCboWI4WlTOQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUgrdHWEEeWCboWI4WlTOQ" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUgrdXWEEeWCboWI4WlTOQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUgrdnWEEeWCboWI4WlTOQ" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUgrd3WEEeWCboWI4WlTOQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HUgreHWEEeWCboWI4WlTOQ" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HUgreXWEEeWCboWI4WlTOQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_HUW6dHWEEeWCboWI4WlTOQ"/>
+      <element xmi:type="uml:Association" href="Lab2-AsynchronousCommunications.uml#_xj0doAuIEeWM194oc0LB3Q"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HUW6dXWEEeWCboWI4WlTOQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HmEVgHWEEeWCboWI4WlTOQ" id="(1.0,0.5087719298245614)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HmEVgXWEEeWCboWI4WlTOQ" id="(0.0,0.5)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_9LVxIHWFEeWKkurYeAKUOg" type="PapyrusUMLActivityDiagram" name="increment method" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_9LVxIXWFEeWKkurYeAKUOg" type="Activity_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9LVxInWFEeWKkurYeAKUOg" type="Activity_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9LVxI3WFEeWKkurYeAKUOg" type="Activity_KeywordLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDgH7XcXEey0SZNINl-EAQ" type="Activity_ParameterCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9LVxJXWFEeWKkurYeAKUOg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9LVxJnWFEeWKkurYeAKUOg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9LVxJ3WFEeWKkurYeAKUOg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDgu8HcXEey0SZNINl-EAQ" type="Activity_PreconditionCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9LVxKXWFEeWKkurYeAKUOg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9LVxKnWFEeWKkurYeAKUOg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9LVxK3WFEeWKkurYeAKUOg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDgu8XcXEey0SZNINl-EAQ" type="Activity_PostconditionCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9LVxLXWFEeWKkurYeAKUOg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9LVxLnWFEeWKkurYeAKUOg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9LVxL3WFEeWKkurYeAKUOg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDgu8ncXEey0SZNINl-EAQ" type="Activity_ActivityNodeCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9LVxMXWFEeWKkurYeAKUOg"/>
+      </children>
+      <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_cM6jwHXkEeKEDJ51kkuoUw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9LVxMnWFEeWKkurYeAKUOg" width="764" height="395"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_9LVxM3WFEeWKkurYeAKUOg" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_9LVxNHWFEeWKkurYeAKUOg"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_zDgH4HcXEey0SZNINl-EAQ" diagramKindId="org.eclipse.papyrus.uml.diagram.activity">
+      <owner xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_cM6jwHXkEeKEDJ51kkuoUw"/>
+    </styles>
+    <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_cM6jwHXkEeKEDJ51kkuoUw"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="__hKuUIbDEeWsEfRuOuHHRQ" type="PapyrusUMLActivityDiagram" name="ActivityDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="__hKuUYbDEeWsEfRuOuHHRQ" type="Activity_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="__hKuUobDEeWsEfRuOuHHRQ" type="Activity_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="__hKuU4bDEeWsEfRuOuHHRQ" type="Activity_KeywordLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDxNoHcXEey0SZNINl-EAQ" type="Activity_ParameterCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="__hKuVYbDEeWsEfRuOuHHRQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__hKuVobDEeWsEfRuOuHHRQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hKuV4bDEeWsEfRuOuHHRQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDxNoXcXEey0SZNINl-EAQ" type="Activity_PreconditionCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="__hKuWYbDEeWsEfRuOuHHRQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__hKuWobDEeWsEfRuOuHHRQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hKuW4bDEeWsEfRuOuHHRQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDxNoncXEey0SZNINl-EAQ" type="Activity_PostconditionCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="__hKuXYbDEeWsEfRuOuHHRQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__hKuXobDEeWsEfRuOuHHRQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hKuX4bDEeWsEfRuOuHHRQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_zDxNo3cXEey0SZNINl-EAQ" type="Activity_ActivityNodeCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hKuYYbDEeWsEfRuOuHHRQ"/>
+      </children>
+      <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_7vkE8IbDEeWsEfRuOuHHRQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hKuYobDEeWsEfRuOuHHRQ" width="456" height="297"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="__hKuY4bDEeWsEfRuOuHHRQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="__hKuZIbDEeWsEfRuOuHHRQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_zDwmkHcXEey0SZNINl-EAQ" diagramKindId="org.eclipse.papyrus.uml.diagram.activity">
+      <owner xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_7vkE8IbDEeWsEfRuOuHHRQ"/>
+    </styles>
+    <element xmi:type="uml:Activity" href="Lab2-AsynchronousCommunications.uml#_7vkE8IbDEeWsEfRuOuHHRQ"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -17,7 +17,6 @@ package org.eclipse.papyrus.simplenn.gen.keras;
 import org.eclipse.uml2.uml.Class;
 import static extension org.eclipse.uml2.uml.util.UMLUtil.getStereotypeApplication
 
-import org.eclipse.uml2.uml.util.UMLUtil
 import org.eclipse.papyrus.simplenn.profile.SimpleNN.NeuralNetwork
 import org.eclipse.papyrus.simplenn.profile.SimpleNN.Layer
 import org.eclipse.papyrus.simplenn.profile.SimpleNN.LSTM

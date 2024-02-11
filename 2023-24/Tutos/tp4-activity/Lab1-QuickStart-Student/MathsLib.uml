@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VkM0kHWVEeWKkurYeAKUOg" name="MathsLib">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_VkM0kXWVEeWKkurYeAKUOg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_alRhwHWVEeWKkurYeAKUOg" name="Square">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_pPTtQHWVEeWKkurYeAKUOg" name="value">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_s56WwHWVEeWKkurYeAKUOg" name="result" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+  </packagedElement>
+  <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_dbDcEHWVEeWKkurYeAKUOg" name="Minus">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_y6gnQHWVEeWKkurYeAKUOg" name="first">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_2LKfsHWVEeWKkurYeAKUOg" name="second">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_4zwSkHWVEeWKkurYeAKUOg" name="result" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+  </packagedElement>
+  <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_f1GcoHWVEeWKkurYeAKUOg" name="SquareRoot">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_8CEBoHWVEeWKkurYeAKUOg" name="value">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="__prokHWVEeWKkurYeAKUOg" name="result" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+  </packagedElement>
+  <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_U8t3YHZREeWKkurYeAKUOg" name="Plus">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_XspBUHZREeWKkurYeAKUOg" name="first">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yt300HZREeWKkurYeAKUOg" name="second">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_bDSNAHZREeWKkurYeAKUOg" name="result" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedParameter>
+  </packagedElement>
+</uml:Model>

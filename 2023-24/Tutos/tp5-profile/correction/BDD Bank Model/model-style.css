@@ -1,0 +1,83 @@
+Class[appliedStereotypes~="Table"]{
+	fillColor:lightYellow;
+	bold:true;
+	elementIcon:true;
+}
+
+Property{
+	elementIcon:false;
+	maskLabel: name type multiplicity;
+}
+
+Property[appliedStereotypes~="PrimaryKey"]{
+	bold:true;
+	elementIcon:false;
+	maskLabel: name type multiplicity;
+}
+
+Class > Compartment[kind="operations"] {
+    visible:false;
+}
+
+Class > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+
+Association, AssociationClass{
+	lineColor:blue;
+	routing: Rectilinear;
+}
+
+Association > Label:name {
+	visible:true;
+}
+
+Association > Label:sourceMultiplicity {
+	visible:false;
+}
+ 
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:sourceRole {
+	maskLabel: multiplicity;
+}
+ 
+Association > Label:targetRole {
+	maskLabel: multiplicity;
+}
+
+AssociationClass > Label:name {
+	visible:false;
+}
+
+AssociationClass > Label:sourceMultiplicity {
+	visible:false;
+}
+ 
+AssociationClass > Label:targetMultiplicity {
+	visible:false;
+}
+
+AssociationClass > Label:sourceRole {
+	maskLabel: multiplicity;
+}
+ 
+AssociationClass > Label:targetRole {
+	maskLabel: multiplicity;
+}
+
+AssociationClass > Compartment[kind="operations"] {
+    visible:false;
+}
+
+AssociationClass > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+
+AssociationClass{
+	fillColor: lightGreen;
+	bold: true;
+	elementIcon: true;
+}

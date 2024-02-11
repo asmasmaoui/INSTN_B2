@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_TEGMIHIVEeKn_eMfgI85Zw" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_V0X9oJhwEeK3cdNlM09OZw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_2CeHEKKHEeKB6PiQ7fFSsA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_wLFCsHXhEeKEDJ51kkuoUw" name="System">
+      <packagedElement xmi:type="uml:Class" xmi:id="_343NwHXhEeKEDJ51kkuoUw" name="Increment" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RdkXEHXiEeKEDJ51kkuoUw" name="counter" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HwVJAJ0vEeK8rd5qZDq8MQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HwoD8J0vEeK8rd5qZDq8MQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xj59MAuIEeWM194oc0LB3Q" name="ticker" type="_cYmdEAuIEeWM194oc0LB3Q" association="_xj0doAuIEeWM194oc0LB3Q"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_cM6jwHXkEeKEDJ51kkuoUw" name="incrementMethod" specification="_LmEtUHXkEeKEDJ51kkuoUw"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_nb0-IAuBEeWM194oc0LB3Q" name="Increment_Factory"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_7vkE8IbDEeWsEfRuOuHHRQ" name="initialize" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_LmEtUHXkEeKEDJ51kkuoUw" name="increment" method="_cM6jwHXkEeKEDJ51kkuoUw"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_neLukAuBEeWM194oc0LB3Q" name="Increment">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_nfwb4AuBEeWM194oc0LB3Q" name="return" type="_343NwHXhEeKEDJ51kkuoUw" direction="return"/>
+        </ownedOperation>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_UplpUAuQEeWM194oc0LB3Q" name="Tick" signal="_8Qv6YAuIEeWM194oc0LB3Q"/>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_VU0-sAuQEeWM194oc0LB3Q" name="Start" signal="_zlqusAuKEeWM194oc0LB3Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cYmdEAuIEeWM194oc0LB3Q" name="Ticker" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xj6kQAuIEeWM194oc0LB3Q" name="increment" type="_343NwHXhEeKEDJ51kkuoUw" association="_xj0doAuIEeWM194oc0LB3Q"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_CaZVAAuQEeWM194oc0LB3Q" name="Ticker_Factory"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_sXcfpguIEeWM194oc0LB3Q" name="Ticker">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_sXcfpwuIEeWM194oc0LB3Q" type="_cYmdEAuIEeWM194oc0LB3Q" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sXcfqAuIEeWM194oc0LB3Q" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sXcfqQuIEeWM194oc0LB3Q" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_YjTF0AuQEeWM194oc0LB3Q" name="Ack" signal="_XanDoAuJEeWM194oc0LB3Q"/>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_Zk0NMAuQEeWM194oc0LB3Q" name="Start" signal="_zlqusAuKEeWM194oc0LB3Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xj0doAuIEeWM194oc0LB3Q" name="A_ticker_increment" memberEnd="_xj59MAuIEeWM194oc0LB3Q _xj6kQAuIEeWM194oc0LB3Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xj4vEAuIEeWM194oc0LB3Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xj4vEQuIEeWM194oc0LB3Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_VhPfgAuPEeWM194oc0LB3Q" name="Start"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ta3z8HWDEeWCboWI4WlTOQ" name="Signals">
+        <packagedElement xmi:type="uml:Signal" xmi:id="_8Qv6YAuIEeWM194oc0LB3Q" name="Tick"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_XanDoAuJEeWM194oc0LB3Q" name="Ack"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_zA0v0HWDEeWCboWI4WlTOQ" name="Events">
+          <packagedElement xmi:type="uml:SignalEvent" xmi:id="_B45ZMAuKEeWM194oc0LB3Q" name="AckSignalEvent" signal="_XanDoAuJEeWM194oc0LB3Q"/>
+          <packagedElement xmi:type="uml:SignalEvent" xmi:id="_I1W_kAuLEeWM194oc0LB3Q" name="StartSignalEvent" signal="_zlqusAuKEeWM194oc0LB3Q"/>
+          <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-Jdi8AudEeWYSe5zWM00Mw" name="TickSignalEvent" signal="_8Qv6YAuIEeWM194oc0LB3Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_zlqusAuKEeWM194oc0LB3Q" name="Start"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XRCisPufEeOaTf6ppV18tA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XSCBMPufEeOaTf6ppV18tA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ncV7gAuBEeWM194oc0LB3Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ncYXwAuBEeWM194oc0LB3Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOjy8AuIEeWM194oc0LB3Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zn4AQHcXEey0SZNINl-EAQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zn4AQXcXEey0SZNINl-EAQ" key="Version" value="0.1.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zn4AQncXEey0SZNINl-EAQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zn4AQ3cXEey0SZNINl-EAQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zn4ARHcXEey0SZNINl-EAQ" key="Date" value="2015-01-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zn4ARXcXEey0SZNINl-EAQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOkaAAuIEeWM194oc0LB3Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_nfxC8AuBEeWM194oc0LB3Q" base_BehavioralFeature="_neLukAuBEeWM194oc0LB3Q"/>
+  <standard:Create xmi:id="_sXosoAuIEeWM194oc0LB3Q" base_BehavioralFeature="_sXcfpguIEeWM194oc0LB3Q"/>
+</xmi:XMI>

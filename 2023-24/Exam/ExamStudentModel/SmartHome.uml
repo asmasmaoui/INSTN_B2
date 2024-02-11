@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Model xmi:id="_9l0t0IxnEeWenow-3DQRYg" name="SmartHome">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_9l0t0YxnEeWenow-3DQRYg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-tNaYIxsEeWcR9mTkASqaA" name="SmartHome">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ofnhYIxtEeWcR9mTkASqaA" name="tempManager" type="_t9zaoIxoEeWenow-3DQRYg" aggregation="composite" association="_X-XRII0TEeWEQbXYnTuCOw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VvemsIxuEeWcR9mTkASqaA" name="houseController" type="_nc1oAIxoEeWenow-3DQRYg" aggregation="composite" association="_ZC86oI0TEeWEQbXYnTuCOw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6X6bI9nrEeepQ-WATZmAuQ" name="temperatureSensor" type="_LwfcwIxoEeWenow-3DQRYg" aggregation="composite" association="_6X6bINnrEeepQ-WATZmAuQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6X6bJNnrEeepQ-WATZmAuQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6X6bJdnrEeepQ-WATZmAuQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BOSbwNtaEeeG2d0RosYykg" name="heatingACS" type="_gYKUkNnrEeepQ-WATZmAuQ"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_Nm2qUNnuEeepQ-WATZmAuQ" name="temperatureSensor_temperatureManager">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Nm2qUdnuEeepQ-WATZmAuQ" partWithPort="_ofnhYIxtEeWcR9mTkASqaA" role="_MCoY0IxsEeW-6rjaOmINDg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Nm2qUtnuEeepQ-WATZmAuQ" role="_6X6bI9nrEeepQ-WATZmAuQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_C3ST0NnvEeepQ-WATZmAuQ" name="temperatureManager_HouseController">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_C3ST0dnvEeepQ-WATZmAuQ" partWithPort="_VvemsIxuEeWcR9mTkASqaA" role="_91tQUNnuEeepQ-WATZmAuQ"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_C3ST0tnvEeepQ-WATZmAuQ" partWithPort="_ofnhYIxtEeWcR9mTkASqaA" role="_BF_VUNnvEeepQ-WATZmAuQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_FWXEYNtaEeeG2d0RosYykg" name="heatingACS_temperatureManager">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_FWXEYdtaEeeG2d0RosYykg" role="_BOSbwNtaEeeG2d0RosYykg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_FWXEYttaEeeG2d0RosYykg" partWithPort="_ofnhYIxtEeWcR9mTkASqaA" role="_XA0DUNnuEeepQ-WATZmAuQ"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CNYHwIxoEeWenow-3DQRYg" name="Hardware">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LwfcwIxoEeWenow-3DQRYg" name="TemperatureSensor">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_SGceQNnyEeepQ-WATZmAuQ" name="getTemperature$Impl" visibility="private" specification="_3OouUNnxEeepQ-WATZmAuQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VPSegNnyEeepQ-WATZmAuQ" name="temperature" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3OouUNnxEeepQ-WATZmAuQ" name="getTemperature" method="_SGceQNnyEeepQ-WATZmAuQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_3OouUdnxEeepQ-WATZmAuQ" name="temperature" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_v0zUUIxvEeWcR9mTkASqaA" name="SmokeDetectionSensor">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZqLVcNnyEeepQ-WATZmAuQ" name="isCODetected$Impl" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ez9SsNnyEeepQ-WATZmAuQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_h3XZUNnyEeepQ-WATZmAuQ" name="isSmokeDetected$Impl" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mK5rENnyEeepQ-WATZmAuQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gYKUkNnrEeepQ-WATZmAuQ" name="HeatingACS">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_EnS0YNtZEeeG2d0RosYykg" client="_gYKUkNnrEeepQ-WATZmAuQ" supplier="__ximYNtYEeeG2d0RosYykg" contract="__ximYNtYEeeG2d0RosYykg"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_snwkUNnzEeepQ-WATZmAuQ" name="startHeating$Impl" visibility="private" specification="_mt9XsNtZEeeG2d0RosYykg"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_xeqB0NnzEeepQ-WATZmAuQ" name="stopHeating$Impl" visibility="private" specification="_mt9XsdtZEeeG2d0RosYykg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mt9XsNtZEeeG2d0RosYykg" name="startHeating" method="_snwkUNnzEeepQ-WATZmAuQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mt9XsdtZEeeG2d0RosYykg" name="stopHeating" method="_xeqB0NnzEeepQ-WATZmAuQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JFTcoNnsEeepQ-WATZmAuQ" name="Alarm">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_3nt1UNn0EeepQ-WATZmAuQ" name="stop$Impl" visibility="private"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_9fLX8Nn0EeepQ-WATZmAuQ" name="trigger$Impl" visibility="private"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EjRoIIxoEeWenow-3DQRYg" name="Software">
+      <packagedElement xmi:type="uml:Class" xmi:id="_t9zaoIxoEeWenow-3DQRYg" name="TemperatureManager" classifierBehavior="_2-n44Ix-EeWcR9mTkASqaA" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_MCoY0IxsEeW-6rjaOmINDg" name="temperatureSensorPort" type="__cAn0IxxEeWcR9mTkASqaA" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_XA0DUNnuEeepQ-WATZmAuQ" name="heatingACSPort" type="__ximYNtYEeeG2d0RosYykg" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_BF_VUNnvEeepQ-WATZmAuQ" name="controllerPort" type="_lK4WgNoIEeepQ-WATZmAuQ" aggregation="composite" isBehavior="true"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Z0MagNtaEeeG2d0RosYykg" client="_t9zaoIxoEeWenow-3DQRYg" supplier="_DR6pQNoOEeepQ-WATZmAuQ" contract="_DR6pQNoOEeepQ-WATZmAuQ"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_2-n44Ix-EeWcR9mTkASqaA" name="TemperatureManager$behavior$1" visibility="private">
+          <region xmi:type="uml:Region" xmi:id="_42NFkIx-EeWcR9mTkASqaA" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_e3_aoIx_EeW55Ziaa5A1wg" source="_duh4MIx_EeW55Ziaa5A1wg" target="_TZkPgIx_EeW55Ziaa5A1wg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_pLcncIx_EeW55Ziaa5A1wg" source="_R5SIgIx_EeW55Ziaa5A1wg" target="_TZkPgIx_EeW55Ziaa5A1wg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_6FWLMI3cEeW_oaKXnI1osQ" name="Trigger_SE_OFF" event="_lZtKwNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rKaOgIx_EeW55Ziaa5A1wg" source="_TZkPgIx_EeW55Ziaa5A1wg" target="_R5SIgIx_EeW55Ziaa5A1wg">
+              <trigger xmi:type="uml:Trigger" xmi:id="__VPfsNoKEeepQ-WATZmAuQ" name="Trigger_SE_ON" event="_ilwccNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_R5SIgIx_EeW55Ziaa5A1wg" name="On">
+              <region xmi:type="uml:Region" xmi:id="_XTl7wtn2EeepQ-WATZmAuQ" name="Region1"/>
+              <region xmi:type="uml:Region" xmi:id="_X9dYINn2EeepQ-WATZmAuQ" name="Region2"/>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_TZkPgIx_EeW55Ziaa5A1wg" name="Off"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_duh4MIx_EeW55Ziaa5A1wg" name="Initial1"/>
+          </region>
+        </ownedBehavior>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_LSY5ENoJEeepQ-WATZmAuQ" name="Off" signal="_cbQ7ANoIEeepQ-WATZmAuQ"/>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_LSY5EdoJEeepQ-WATZmAuQ" name="On" signal="_DLEpINoIEeepQ-WATZmAuQ"/>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_aluG8NoOEeepQ-WATZmAuQ" name="Temperature" signal="_HCqzgNoNEeepQ-WATZmAuQ"/>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_fR2pcNoPEeepQ-WATZmAuQ" name="Reset" signal="_Y0b6ENoPEeepQ-WATZmAuQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ENQS0Ix-EeWcR9mTkASqaA" name="SmokeDetectionManager" classifierBehavior="_D0LSsNoXEeepQ-WATZmAuQ" isActive="true">
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_D0LSsNoXEeepQ-WATZmAuQ" name="SmokeDetectionManager$behavior$1" visibility="private">
+          <region xmi:type="uml:Region" xmi:id="_GHn8ANoXEeepQ-WATZmAuQ" name="Region1"/>
+        </ownedBehavior>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_cM138NodEeepQ-WATZmAuQ" name="Reset" signal="_Y0b6ENoPEeepQ-WATZmAuQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nc1oAIxoEeWenow-3DQRYg" name="HouseController" classifierBehavior="_Vb4SQIyPEeW55Ziaa5A1wg" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_91tQUNnuEeepQ-WATZmAuQ" name="temperatureManagerPort" type="_lK4WgNoIEeepQ-WATZmAuQ" aggregation="composite" isConjugated="true"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Vb4SQIyPEeW55Ziaa5A1wg" name="HouseController$behavior$1" visibility="private">
+          <region xmi:type="uml:Region" xmi:id="_Mn2-kNoGEeepQ-WATZmAuQ" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_W-FykNoGEeepQ-WATZmAuQ" source="_ObopUNoGEeepQ-WATZmAuQ" target="_QUdzMNoGEeepQ-WATZmAuQ"/>
+            <transition xmi:type="uml:Transition" xmi:id="_6EFr8NoGEeepQ-WATZmAuQ" source="_YAd1kNoGEeepQ-WATZmAuQ" target="_QUdzMNoGEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_08NPUNoKEeepQ-WATZmAuQ" name="Trigger_SE_ON" event="_ilwccNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_7YZMcNoGEeepQ-WATZmAuQ" source="_QUdzMNoGEeepQ-WATZmAuQ" target="_YAd1kNoGEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_wSHewNoKEeepQ-WATZmAuQ" name="Trigger_SE_OFF" event="_lZtKwNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Ou1csNoHEeepQ-WATZmAuQ" source="_YAd1kNoGEeepQ-WATZmAuQ" target="_L4x1kNoHEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_dfLgANoREeepQ-WATZmAuQ" name="Trigger_SE_Exit" event="_T_OzwNoREeepQ-WATZmAuQ"/>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_QUdzMNoGEeepQ-WATZmAuQ" name="Temperature Control ON">
+              <entry xmi:type="uml:Activity" xmi:id="_CPbmoNoQEeepQ-WATZmAuQ" name="startManager" node="_v2Sn8NoWEeepQ-WATZmAuQ _14xu0NoWEeepQ-WATZmAuQ">
+                <edge xmi:type="uml:ObjectFlow" xmi:id="_4DR3gNoWEeepQ-WATZmAuQ" target="_xhlsINoWEeepQ-WATZmAuQ" source="_14xu0doWEeepQ-WATZmAuQ">
+                  <guard xmi:type="uml:LiteralBoolean" xmi:id="_4D3GUNoWEeepQ-WATZmAuQ" value="true"/>
+                  <weight xmi:type="uml:LiteralInteger" xmi:id="_4D3GUdoWEeepQ-WATZmAuQ" value="1"/>
+                </edge>
+                <node xmi:type="uml:SendSignalAction" xmi:id="_v2Sn8NoWEeepQ-WATZmAuQ" name="Send(ON)" signal="_DLEpINoIEeepQ-WATZmAuQ">
+                  <target xmi:type="uml:InputPin" xmi:id="_xhlsINoWEeepQ-WATZmAuQ" name="target" incoming="_4DR3gNoWEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xhlsIdoWEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xhlsItoWEeepQ-WATZmAuQ" value="1"/>
+                  </target>
+                </node>
+                <node xmi:type="uml:ReadSelfAction" xmi:id="_14xu0NoWEeepQ-WATZmAuQ" name="this">
+                  <result xmi:type="uml:OutputPin" xmi:id="_14xu0doWEeepQ-WATZmAuQ" name="result" outgoing="_4DR3gNoWEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_14xu0toWEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14xu09oWEeepQ-WATZmAuQ" value="1"/>
+                  </result>
+                </node>
+              </entry>
+              <region xmi:type="uml:Region" xmi:id="_kj79MtoGEeepQ-WATZmAuQ" name="Region1">
+                <transition xmi:type="uml:Transition" xmi:id="_tOmAMNoGEeepQ-WATZmAuQ" source="_ry2a8NoGEeepQ-WATZmAuQ" target="_pQDuENoGEeepQ-WATZmAuQ"/>
+                <transition xmi:type="uml:Transition" xmi:id="_-8m6ENoGEeepQ-WATZmAuQ" source="_pQDuENoGEeepQ-WATZmAuQ" target="_uRiq8NoGEeepQ-WATZmAuQ">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_F64vQNoREeepQ-WATZmAuQ" name="Trigger_SE_Configure" event="_zL12MNoQEeepQ-WATZmAuQ"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_AEg9UNoHEeepQ-WATZmAuQ" source="_uRiq8NoGEeepQ-WATZmAuQ" target="_pQDuENoGEeepQ-WATZmAuQ">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_KhnCwNoREeepQ-WATZmAuQ" name="Trigger_SE_Reset" event="_aUR8MNoPEeepQ-WATZmAuQ"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_QVKhUNoHEeepQ-WATZmAuQ" source="_QUdzMNoGEeepQ-WATZmAuQ" target="_L4x1kNoHEeepQ-WATZmAuQ">
+                  <effect xmi:type="uml:Activity" xmi:id="_i8QMsNoREeepQ-WATZmAuQ" name="stopManager" node="_YV1OUNoWEeepQ-WATZmAuQ _fKIMoNoWEeepQ-WATZmAuQ">
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="_mEpHsNoWEeepQ-WATZmAuQ" target="_iX4iENoWEeepQ-WATZmAuQ" source="_YV1OUdoWEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="_mE1U8NoWEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="_mE1U8doWEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <node xmi:type="uml:ReadSelfAction" xmi:id="_YV1OUNoWEeepQ-WATZmAuQ" name="this">
+                      <result xmi:type="uml:OutputPin" xmi:id="_YV1OUdoWEeepQ-WATZmAuQ" name="result" outgoing="_mEpHsNoWEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YV1OUtoWEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YV1OU9oWEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                    </node>
+                    <node xmi:type="uml:SendSignalAction" xmi:id="_fKIMoNoWEeepQ-WATZmAuQ" name="Send(OFF)" onPort="_91tQUNnuEeepQ-WATZmAuQ" signal="_cbQ7ANoIEeepQ-WATZmAuQ">
+                      <target xmi:type="uml:InputPin" xmi:id="_iX4iENoWEeepQ-WATZmAuQ" name="target" incoming="_mEpHsNoWEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iX4iEdoWEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iX4iEtoWEeepQ-WATZmAuQ" value="1"/>
+                      </target>
+                    </node>
+                  </effect>
+                  <trigger xmi:type="uml:Trigger" xmi:id="_akfQgNoREeepQ-WATZmAuQ" name="Trigger_SE_Exit" event="_T_OzwNoREeepQ-WATZmAuQ"/>
+                </transition>
+                <subvertex xmi:type="uml:State" xmi:id="_pQDuENoGEeepQ-WATZmAuQ" name="Default">
+                  <entry xmi:type="uml:Activity" xmi:id="_sGzfcNoLEeepQ-WATZmAuQ" name="configure" node="_pkBqkNoUEeepQ-WATZmAuQ _z93zQNoUEeepQ-WATZmAuQ _45PhENoUEeepQ-WATZmAuQ">
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="_3TS28NoUEeepQ-WATZmAuQ" target="_tYKDgNoUEeepQ-WATZmAuQ" source="_z9954NoUEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="_3TxYENoUEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="_3TxYEdoUEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="_Cz7BgNoVEeepQ-WATZmAuQ" target="_rxEJ4NoUEeepQ-WATZmAuQ" source="_45VnsNoUEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="_C0TcANoVEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="_C0ZioNoVEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <node xmi:type="uml:SendSignalAction" xmi:id="_pkBqkNoUEeepQ-WATZmAuQ" name="Send(Temperature)" onPort="_91tQUNnuEeepQ-WATZmAuQ" signal="_HCqzgNoNEeepQ-WATZmAuQ">
+                      <argument xmi:type="uml:InputPin" xmi:id="_rxEJ4NoUEeepQ-WATZmAuQ" name="target" incoming="_Cz7BgNoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+                        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_tYKDg9oUEeepQ-WATZmAuQ" value="1"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxEJ4doUEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxEJ4toUEeepQ-WATZmAuQ" value="1"/>
+                      </argument>
+                      <target xmi:type="uml:InputPin" xmi:id="_tYKDgNoUEeepQ-WATZmAuQ" name="target" incoming="_3TS28NoUEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tYKDgdoUEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tYKDgtoUEeepQ-WATZmAuQ" value="1"/>
+                      </target>
+                    </node>
+                    <node xmi:type="uml:ReadSelfAction" xmi:id="_z93zQNoUEeepQ-WATZmAuQ" name="this">
+                      <result xmi:type="uml:OutputPin" xmi:id="_z9954NoUEeepQ-WATZmAuQ" name="result" outgoing="_3TS28NoUEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z9954doUEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z9954toUEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                    </node>
+                    <node xmi:type="uml:ValueSpecificationAction" xmi:id="_45PhENoUEeepQ-WATZmAuQ" name="20.0">
+                      <result xmi:type="uml:OutputPin" xmi:id="_45VnsNoUEeepQ-WATZmAuQ" name="result" outgoing="_Cz7BgNoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45VnsdoUEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45VnstoUEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                      <value xmi:type="uml:LiteralReal" xmi:id="_BuNWoNoVEeepQ-WATZmAuQ" value="20.0"/>
+                    </node>
+                  </entry>
+                </subvertex>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_ry2a8NoGEeepQ-WATZmAuQ" name="Initial1"/>
+                <subvertex xmi:type="uml:State" xmi:id="_uRiq8NoGEeepQ-WATZmAuQ" name="User">
+                  <entry xmi:type="uml:Activity" xmi:id="_JkQfINoQEeepQ-WATZmAuQ" name="configure" node="_NM_uINoVEeepQ-WATZmAuQ _UWYysNoVEeepQ-WATZmAuQ _nGATgNoVEeepQ-WATZmAuQ _tfNRQNoVEeepQ-WATZmAuQ">
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="_bgb-kNoVEeepQ-WATZmAuQ" target="_VirmsNoVEeepQ-WATZmAuQ" source="_NM_uIdoVEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="_bg0ZENoVEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="_bg0ZEdoVEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="_-66TINoVEeepQ-WATZmAuQ" target="_3q2l4NoVEeepQ-WATZmAuQ" source="_pbWaQ9oVEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="_-7Y0QNoVEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="_-7Y0QdoVEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <edge xmi:type="uml:ObjectFlow" xmi:id="__qmqsNoVEeepQ-WATZmAuQ" target="_WH3-cNoVEeepQ-WATZmAuQ" source="_3q8sgNoVEeepQ-WATZmAuQ">
+                      <guard xmi:type="uml:LiteralBoolean" xmi:id="__rSAINoVEeepQ-WATZmAuQ" value="true"/>
+                      <weight xmi:type="uml:LiteralInteger" xmi:id="__rSAIdoVEeepQ-WATZmAuQ" value="1"/>
+                    </edge>
+                    <node xmi:type="uml:ReadSelfAction" xmi:id="_NM_uINoVEeepQ-WATZmAuQ" name="this">
+                      <result xmi:type="uml:OutputPin" xmi:id="_NM_uIdoVEeepQ-WATZmAuQ" name="result" outgoing="_bgb-kNoVEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NM_uItoVEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NM_uI9oVEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                    </node>
+                    <node xmi:type="uml:SendSignalAction" xmi:id="_UWYysNoVEeepQ-WATZmAuQ" name="Send(Temperature)" onPort="_91tQUNnuEeepQ-WATZmAuQ" signal="_HCqzgNoNEeepQ-WATZmAuQ">
+                      <argument xmi:type="uml:InputPin" xmi:id="_VirmsNoVEeepQ-WATZmAuQ" name="target" incoming="_bgb-kNoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+                        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_WH3-c9oVEeepQ-WATZmAuQ" value="1"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VirmsdoVEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VirmstoVEeepQ-WATZmAuQ" value="1"/>
+                      </argument>
+                      <target xmi:type="uml:InputPin" xmi:id="_WH3-cNoVEeepQ-WATZmAuQ" name="target" incoming="__qmqsNoVEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WH3-cdoVEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WH3-ctoVEeepQ-WATZmAuQ" value="1"/>
+                      </target>
+                    </node>
+                    <node xmi:type="uml:CallBehaviorAction" xmi:id="_nGATgNoVEeepQ-WATZmAuQ" name="call(readline)">
+                      <result xmi:type="uml:OutputPin" xmi:id="_pbWaQNoVEeepQ-WATZmAuQ" name="errorStatus">
+                        <type xmi:type="uml:DataType" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#Common-Status"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pbWaQdoVEeepQ-WATZmAuQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pbWaQtoVEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                      <result xmi:type="uml:OutputPin" xmi:id="_pbWaQ9oVEeepQ-WATZmAuQ" name="result" outgoing="_-66TINoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pbWaRNoVEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pbWaRdoVEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                      <behavior xmi:type="uml:Activity" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#BasicInputOutput-ReadLine"/>
+                    </node>
+                    <node xmi:type="uml:CallBehaviorAction" xmi:id="_tfNRQNoVEeepQ-WATZmAuQ" name="call(toReal)">
+                      <argument xmi:type="uml:InputPin" xmi:id="_3q2l4NoVEeepQ-WATZmAuQ" name="x" incoming="_-66TINoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_3q8sg9oVEeepQ-WATZmAuQ" value="1"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3q2l4doVEeepQ-WATZmAuQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3q2l4toVEeepQ-WATZmAuQ" value="1"/>
+                      </argument>
+                      <result xmi:type="uml:OutputPin" xmi:id="_3q8sgNoVEeepQ-WATZmAuQ" name="result" outgoing="__qmqsNoVEeepQ-WATZmAuQ">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+                        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_3q8shNoVEeepQ-WATZmAuQ" value="1"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3q8sgdoVEeepQ-WATZmAuQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3q8sgtoVEeepQ-WATZmAuQ" value="1"/>
+                      </result>
+                      <behavior xmi:type="uml:FunctionBehavior" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#PrimitiveBehaviors-RealFunctions-ToReal"/>
+                    </node>
+                  </entry>
+                </subvertex>
+              </region>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_YAd1kNoGEeepQ-WATZmAuQ" name="Temperature Control OFF">
+              <entry xmi:type="uml:Activity" xmi:id="_TjbVoNoeEeepQ-WATZmAuQ" name="stopManager" node="_bnkLMNoeEeepQ-WATZmAuQ _h0x7YNoeEeepQ-WATZmAuQ">
+                <edge xmi:type="uml:ObjectFlow" xmi:id="_plXi0NoeEeepQ-WATZmAuQ" target="_jbsO0NoeEeepQ-WATZmAuQ" source="_bnkLMdoeEeepQ-WATZmAuQ">
+                  <guard xmi:type="uml:LiteralBoolean" xmi:id="_pl2D8NoeEeepQ-WATZmAuQ" value="true"/>
+                  <weight xmi:type="uml:LiteralInteger" xmi:id="_pl2D8doeEeepQ-WATZmAuQ" value="1"/>
+                </edge>
+                <node xmi:type="uml:ReadSelfAction" xmi:id="_bnkLMNoeEeepQ-WATZmAuQ" name="this">
+                  <result xmi:type="uml:OutputPin" xmi:id="_bnkLMdoeEeepQ-WATZmAuQ" name="result" outgoing="_plXi0NoeEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bnkLMtoeEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnkLM9oeEeepQ-WATZmAuQ" value="1"/>
+                  </result>
+                </node>
+                <node xmi:type="uml:SendSignalAction" xmi:id="_h0x7YNoeEeepQ-WATZmAuQ" name="Send(OFF)" onPort="_91tQUNnuEeepQ-WATZmAuQ" signal="_cbQ7ANoIEeepQ-WATZmAuQ">
+                  <target xmi:type="uml:InputPin" xmi:id="_jbsO0NoeEeepQ-WATZmAuQ" name="target" incoming="_plXi0NoeEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jbsO0doeEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jbsO0toeEeepQ-WATZmAuQ" value="1"/>
+                  </target>
+                </node>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_L4x1kNoHEeepQ-WATZmAuQ" name="FinalState1"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_ObopUNoGEeepQ-WATZmAuQ" name="Initial1"/>
+          </region>
+          <region xmi:type="uml:Region" xmi:id="_NnkIENoGEeepQ-WATZmAuQ" name="Region2">
+            <transition xmi:type="uml:Transition" xmi:id="_nvIPYNodEeepQ-WATZmAuQ" source="_hTN74NodEeepQ-WATZmAuQ" target="_ie2okNodEeepQ-WATZmAuQ"/>
+            <transition xmi:type="uml:Transition" xmi:id="_vpy_4NodEeepQ-WATZmAuQ" source="_rnuRkNodEeepQ-WATZmAuQ" target="_qr1RENodEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_DLxKsNoeEeepQ-WATZmAuQ" name="Trigger_Exit" event="_T_OzwNoREeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_wcu4sNodEeepQ-WATZmAuQ" source="_ie2okNodEeepQ-WATZmAuQ" target="_rnuRkNodEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_4BgRsNodEeepQ-WATZmAuQ" name="Trigger_SE_OFF" event="_lZtKwNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_xUJB0NodEeepQ-WATZmAuQ" source="_rnuRkNodEeepQ-WATZmAuQ" target="_ie2okNodEeepQ-WATZmAuQ">
+              <trigger xmi:type="uml:Trigger" xmi:id="_7dPYwNodEeepQ-WATZmAuQ" name="Trigger_SE_ON" event="_ilwccNoKEeepQ-WATZmAuQ"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_yG4GUNodEeepQ-WATZmAuQ" source="_ie2okNodEeepQ-WATZmAuQ" target="_qr1RENodEeepQ-WATZmAuQ">
+              <effect xmi:type="uml:Activity" xmi:id="_O0oEMNoeEeepQ-WATZmAuQ" name="stopManager" node="_gLwSoNofEeepQ-WATZmAuQ _jbuOkNofEeepQ-WATZmAuQ">
+                <edge xmi:type="uml:ObjectFlow" xmi:id="_rXgZYNofEeepQ-WATZmAuQ" target="_kw-KQNofEeepQ-WATZmAuQ" source="_gL2ZQNofEeepQ-WATZmAuQ">
+                  <guard xmi:type="uml:LiteralBoolean" xmi:id="_rXsmoNofEeepQ-WATZmAuQ" value="true"/>
+                  <weight xmi:type="uml:LiteralInteger" xmi:id="_rXsmodofEeepQ-WATZmAuQ" value="1"/>
+                </edge>
+                <node xmi:type="uml:ReadSelfAction" xmi:id="_gLwSoNofEeepQ-WATZmAuQ" name="this">
+                  <result xmi:type="uml:OutputPin" xmi:id="_gL2ZQNofEeepQ-WATZmAuQ" name="result" outgoing="_rXgZYNofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gL2ZQdofEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gL2ZQtofEeepQ-WATZmAuQ" value="1"/>
+                  </result>
+                </node>
+                <node xmi:type="uml:SendSignalAction" xmi:id="_jbuOkNofEeepQ-WATZmAuQ" name="Send(OFF)" signal="_cbQ7ANoIEeepQ-WATZmAuQ">
+                  <target xmi:type="uml:InputPin" xmi:id="_kw-KQNofEeepQ-WATZmAuQ" name="target" incoming="_rXgZYNofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kw-KQdofEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kw-KQtofEeepQ-WATZmAuQ" value="1"/>
+                  </target>
+                </node>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="__C534NodEeepQ-WATZmAuQ" name="Trigger_Exit" event="_T_OzwNoREeepQ-WATZmAuQ"/>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_ie2okNodEeepQ-WATZmAuQ" name="Smoke Detection ON">
+              <entry xmi:type="uml:Activity" xmi:id="_IdxP0NoeEeepQ-WATZmAuQ" name="startManager" node="_2L6MkNoeEeepQ-WATZmAuQ _50zl4NoeEeepQ-WATZmAuQ">
+                <edge xmi:type="uml:ObjectFlow" xmi:id="_BZSrANofEeepQ-WATZmAuQ" target="_7noOYNoeEeepQ-WATZmAuQ" source="_2MATMNoeEeepQ-WATZmAuQ">
+                  <guard xmi:type="uml:LiteralBoolean" xmi:id="_BZ9ZYNofEeepQ-WATZmAuQ" value="true"/>
+                  <weight xmi:type="uml:LiteralInteger" xmi:id="_BZ9ZYdofEeepQ-WATZmAuQ" value="1"/>
+                </edge>
+                <node xmi:type="uml:ReadSelfAction" xmi:id="_2L6MkNoeEeepQ-WATZmAuQ" name="this">
+                  <result xmi:type="uml:OutputPin" xmi:id="_2MATMNoeEeepQ-WATZmAuQ" name="result" outgoing="_BZSrANofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2MATMdoeEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2MATMtoeEeepQ-WATZmAuQ" value="1"/>
+                  </result>
+                </node>
+                <node xmi:type="uml:SendSignalAction" xmi:id="_50zl4NoeEeepQ-WATZmAuQ" name="Send(ON)" signal="_DLEpINoIEeepQ-WATZmAuQ">
+                  <target xmi:type="uml:InputPin" xmi:id="_7noOYNoeEeepQ-WATZmAuQ" name="target" incoming="_BZSrANofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7noOYdoeEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7noOYtoeEeepQ-WATZmAuQ" value="1"/>
+                  </target>
+                </node>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_qr1RENodEeepQ-WATZmAuQ" name="FinalState1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rnuRkNodEeepQ-WATZmAuQ" name="Smoke Detection OFF">
+              <entry xmi:type="uml:Activity" xmi:id="_M3BIANoeEeepQ-WATZmAuQ" name="stopManager" node="_JQLHsNofEeepQ-WATZmAuQ _LFMIkNofEeepQ-WATZmAuQ">
+                <edge xmi:type="uml:ObjectFlow" xmi:id="_SQiU8NofEeepQ-WATZmAuQ" target="_OHQLYNofEeepQ-WATZmAuQ" source="_JQLHsdofEeepQ-WATZmAuQ">
+                  <guard xmi:type="uml:LiteralBoolean" xmi:id="_SQ6vcNofEeepQ-WATZmAuQ" value="true"/>
+                  <weight xmi:type="uml:LiteralInteger" xmi:id="_SQ6vcdofEeepQ-WATZmAuQ" value="1"/>
+                </edge>
+                <node xmi:type="uml:ReadSelfAction" xmi:id="_JQLHsNofEeepQ-WATZmAuQ" name="this">
+                  <result xmi:type="uml:OutputPin" xmi:id="_JQLHsdofEeepQ-WATZmAuQ" name="result" outgoing="_SQiU8NofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JQLHstofEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JQLHs9ofEeepQ-WATZmAuQ" value="1"/>
+                  </result>
+                </node>
+                <node xmi:type="uml:SendSignalAction" xmi:id="_LFMIkNofEeepQ-WATZmAuQ" name="Send(OFF)" signal="_cbQ7ANoIEeepQ-WATZmAuQ">
+                  <target xmi:type="uml:InputPin" xmi:id="_OHQLYNofEeepQ-WATZmAuQ" name="target" incoming="_SQiU8NofEeepQ-WATZmAuQ" type="_nc1oAIxoEeWenow-3DQRYg">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OHQLYdofEeepQ-WATZmAuQ" value="1"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OHQLYtofEeepQ-WATZmAuQ" value="1"/>
+                  </target>
+                </node>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_hTN74NodEeepQ-WATZmAuQ" name="Initial1"/>
+          </region>
+        </ownedBehavior>
+        <ownedReception xmi:type="uml:Reception" xmi:id="_ogcqgNoQEeepQ-WATZmAuQ" name="Reset"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SyUgwIxoEeWenow-3DQRYg" name="Communications">
+      <packagedElement xmi:type="uml:Package" xmi:id="_bpLIgIxvEeWcR9mTkASqaA" name="Sensors_Protocol">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__cAn0IxxEeWcR9mTkASqaA" name="ITemperature">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ND_i8NnwEeepQ-WATZmAuQ" name="getTemperature">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xkvk4NnwEeepQ-WATZmAuQ" name="temperature" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MmqmYNnzEeepQ-WATZmAuQ" name="HeatingACS_Protocol">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__ximYNtYEeeG2d0RosYykg" name="IHeatingACS">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="__ximYdtYEeeG2d0RosYykg" name="startHeating"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="__ximYttYEeeG2d0RosYykg" name="stopHeating"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_M5zvYNn0EeepQ-WATZmAuQ" name="Alarm_Protocol"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_225hwNoHEeepQ-WATZmAuQ" name="Managers_Protocol">
+        <packagedElement xmi:type="uml:Signal" xmi:id="_DLEpINoIEeepQ-WATZmAuQ" name="ON"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_cbQ7ANoIEeepQ-WATZmAuQ" name="OFF"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_HCqzgNoNEeepQ-WATZmAuQ" name="TEMPERATURE">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a5FkUNoNEeepQ-WATZmAuQ" name="target">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_lK4WgNoIEeepQ-WATZmAuQ" name="IManager">
+          <ownedReception xmi:type="uml:Reception" xmi:id="_zISFgNoIEeepQ-WATZmAuQ" name="ON" signal="_DLEpINoIEeepQ-WATZmAuQ"/>
+          <ownedReception xmi:type="uml:Reception" xmi:id="_23p6QNoIEeepQ-WATZmAuQ" name="OFF" signal="_cbQ7ANoIEeepQ-WATZmAuQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DR6pQNoOEeepQ-WATZmAuQ" name="ITemperatureManager">
+          <generalization xmi:type="uml:Generalization" xmi:id="_UtmdANoOEeepQ-WATZmAuQ" general="_lK4WgNoIEeepQ-WATZmAuQ"/>
+          <ownedReception xmi:type="uml:Reception" xmi:id="_N4oJQNoOEeepQ-WATZmAuQ" name="Temperature" signal="_HCqzgNoNEeepQ-WATZmAuQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ilwccNoKEeepQ-WATZmAuQ" name="SE_ON" signal="_DLEpINoIEeepQ-WATZmAuQ"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_lZtKwNoKEeepQ-WATZmAuQ" name="SE_OFF" signal="_cbQ7ANoIEeepQ-WATZmAuQ"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_xjUrINoOEeepQ-WATZmAuQ" name="SE_Temperature" signal="_HCqzgNoNEeepQ-WATZmAuQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_M0K5ENoCEeepQ-WATZmAuQ" name="InternalEvents">
+        <packagedElement xmi:type="uml:TimeEvent" xmi:id="_QNas0NoCEeepQ-WATZmAuQ" name="after(50ms)" isRelative="true">
+          <when xmi:type="uml:TimeExpression" xmi:id="_ZLbwsNoCEeepQ-WATZmAuQ">
+            <expr xmi:type="uml:LiteralReal" xmi:id="_ZLbwsdoCEeepQ-WATZmAuQ" value="50.0"/>
+          </when>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_Y0b6ENoPEeepQ-WATZmAuQ" name="RESET"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aUR8MNoPEeepQ-WATZmAuQ" name="SE_Reset" signal="_Y0b6ENoPEeepQ-WATZmAuQ"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_w5W2MNoQEeepQ-WATZmAuQ" name="Configure"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_zL12MNoQEeepQ-WATZmAuQ" name="SE_Configure" signal="_w5W2MNoQEeepQ-WATZmAuQ"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_OoO54NoREeepQ-WATZmAuQ" name="Exit"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_T_OzwNoREeepQ-WATZmAuQ" name="SE_Exit" signal="_OoO54NoREeepQ-WATZmAuQ"/>
+        <packagedElement xmi:type="uml:TimeEvent" xmi:id="_zxBbUNoaEeepQ-WATZmAuQ" name="after(300000ms)" isRelative="true">
+          <when xmi:type="uml:TimeExpression" xmi:id="_41wggNoaEeepQ-WATZmAuQ">
+            <expr xmi:type="uml:LiteralReal" xmi:id="_41wggdoaEeepQ-WATZmAuQ" value="300000.0"/>
+          </when>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-XRII0TEeWEQbXYnTuCOw" name="A_tempManager_smartHouse" memberEnd="_ofnhYIxtEeWcR9mTkASqaA _X-YfQI0TEeWEQbXYnTuCOw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_X-YfQI0TEeWEQbXYnTuCOw" name="smartHouse" type="_-tNaYIxsEeWcR9mTkASqaA" association="_X-XRII0TEeWEQbXYnTuCOw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-ZGUI0TEeWEQbXYnTuCOw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-ZtYI0TEeWEQbXYnTuCOw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZC86oI0TEeWEQbXYnTuCOw" name="A_houseController_smartHouse" memberEnd="_VvemsIxuEeWcR9mTkASqaA _ZC-IwI0TEeWEQbXYnTuCOw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZC-IwI0TEeWEQbXYnTuCOw" name="smartHouse" type="_-tNaYIxsEeWcR9mTkASqaA" association="_ZC86oI0TEeWEQbXYnTuCOw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZC-v0I0TEeWEQbXYnTuCOw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZC-v0Y0TEeWEQbXYnTuCOw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6X6bINnrEeepQ-WATZmAuQ" memberEnd="_6X6bI9nrEeepQ-WATZmAuQ _6X6bJtnrEeepQ-WATZmAuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6X6bIdnrEeepQ-WATZmAuQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6X6bItnrEeepQ-WATZmAuQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6X6bJtnrEeepQ-WATZmAuQ" name="smarthouse" type="_-tNaYIxsEeWcR9mTkASqaA" association="_6X6bINnrEeepQ-WATZmAuQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zu328NnsEeepQ-WATZmAuQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZvW_INnsEeepQ-WATZmAuQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_261FsNnqEeepQ-WATZmAuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_267MUdnqEeepQ-WATZmAuQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_267MUtnqEeepQ-WATZmAuQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_267MU9nqEeepQ-WATZmAuQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_267MVNnqEeepQ-WATZmAuQ" key="Copyright" value="CEA LIST - Initial API and Implementation&#xD;&#xA;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_267MVdnqEeepQ-WATZmAuQ" key="Date" value="2012-12-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_267MVtnqEeepQ-WATZmAuQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_267MUNnqEeepQ-WATZmAuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eijPgUBcEeKj6r7ThQagKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_dL4lkPXAEeGSQON-DQ-5eg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_267MV9nqEeepQ-WATZmAuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_27BS8NnqEeepQ-WATZmAuQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27BS8dnqEeepQ-WATZmAuQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27BS8tnqEeepQ-WATZmAuQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27BS89nqEeepQ-WATZmAuQ" key="Copyright" value="CEA LIST - Initial API and Implementation&#xD;&#xA;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27BS9NnqEeepQ-WATZmAuQ" key="Date" value="2012-12-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_27BS9dnqEeepQ-WATZmAuQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_267MWNnqEeepQ-WATZmAuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_16oYAD-SEeKj6r7ThQagKA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RSR4YMjDEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RSTGgMjDEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TvQRIMjDEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TvSGUMjDEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qytJMMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qytJMcjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qyvlcMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qyvlccjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qywzkMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qyxaoMjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qzfMUMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzfMUcjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qzfzYMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzfzYcjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qzgacMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzgaccjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qzhBgMjEEe6_6cwym3L24Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qzhBgcjEEe6_6cwym3L24Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_S8xAoEZwEeqROemkMyop6Q" base_Class="_-tNaYIxsEeWcR9mTkASqaA"/>
+  <Blocks:Block xmi:id="_WVCmMEZ_EeqROemkMyop6Q" base_Class="_LwfcwIxoEeWenow-3DQRYg"/>
+  <Blocks:Block xmi:id="_W07AIEZ_EeqROemkMyop6Q" base_Class="_v0zUUIxvEeWcR9mTkASqaA"/>
+  <Blocks:Block xmi:id="_Xm-vMEZ_EeqROemkMyop6Q" base_Class="_gYKUkNnrEeepQ-WATZmAuQ"/>
+  <Blocks:Block xmi:id="_YIDb8EZ_EeqROemkMyop6Q" base_Class="_JFTcoNnsEeepQ-WATZmAuQ"/>
+  <Blocks:Block xmi:id="_YtS3AEZ_EeqROemkMyop6Q" base_Class="_t9zaoIxoEeWenow-3DQRYg"/>
+  <Blocks:Block xmi:id="_ZNCHAEZ_EeqROemkMyop6Q" base_Class="_ENQS0Ix-EeWcR9mTkASqaA"/>
+  <Blocks:Block xmi:id="_ZqrFQEZ_EeqROemkMyop6Q" base_Class="_nc1oAIxoEeWenow-3DQRYg"/>
+</xmi:XMI>
