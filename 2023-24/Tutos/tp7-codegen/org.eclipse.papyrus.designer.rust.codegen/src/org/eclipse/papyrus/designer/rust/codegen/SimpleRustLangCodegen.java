@@ -20,8 +20,6 @@ import org.eclipse.papyrus.designer.languages.common.extensionpoints.ILangCodege
 import org.eclipse.papyrus.designer.languages.common.extensionpoints.MethodInfo;
 import org.eclipse.papyrus.designer.languages.common.extensionpoints.SyncInformation;
 import org.eclipse.papyrus.designer.rust.codegen.transformation.RustModelElementsCreator;
-import org.eclipse.papyrus.simplenn.profile.SimpleNN.NeuralNetwork;
-import org.eclipse.papyrus.uml.tools.utils.StereotypeUtil;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.NamedElement;
@@ -40,7 +38,7 @@ public class SimpleRustLangCodegen extends CommonLangCodegen implements ILangCod
 	@Override
 	public boolean isEligible(Element modelElement) {
 		if (modelElement instanceof Classifier) {
-			return StereotypeUtil.isApplied(modelElement, NeuralNetwork.class);
+			return true;
 		}
 		return false;
 	}
