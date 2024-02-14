@@ -69,21 +69,7 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_BF_VUNnvEeepQ-WATZmAuQ" name="controllerPort" type="_lK4WgNoIEeepQ-WATZmAuQ" aggregation="composite" isBehavior="true"/>
         <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Z0MagNtaEeeG2d0RosYykg" client="_t9zaoIxoEeWenow-3DQRYg" supplier="_DR6pQNoOEeepQ-WATZmAuQ" contract="_DR6pQNoOEeepQ-WATZmAuQ"/>
         <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_2-n44Ix-EeWcR9mTkASqaA" name="TemperatureManager$behavior$1" visibility="private">
-          <region xmi:type="uml:Region" xmi:id="_42NFkIx-EeWcR9mTkASqaA" name="Region1">
-            <transition xmi:type="uml:Transition" xmi:id="_e3_aoIx_EeW55Ziaa5A1wg" source="_duh4MIx_EeW55Ziaa5A1wg" target="_TZkPgIx_EeW55Ziaa5A1wg"/>
-            <transition xmi:type="uml:Transition" xmi:id="_pLcncIx_EeW55Ziaa5A1wg" source="_R5SIgIx_EeW55Ziaa5A1wg" target="_TZkPgIx_EeW55Ziaa5A1wg">
-              <trigger xmi:type="uml:Trigger" xmi:id="_6FWLMI3cEeW_oaKXnI1osQ" name="Trigger_SE_OFF" event="_lZtKwNoKEeepQ-WATZmAuQ"/>
-            </transition>
-            <transition xmi:type="uml:Transition" xmi:id="_rKaOgIx_EeW55Ziaa5A1wg" source="_TZkPgIx_EeW55Ziaa5A1wg" target="_R5SIgIx_EeW55Ziaa5A1wg">
-              <trigger xmi:type="uml:Trigger" xmi:id="__VPfsNoKEeepQ-WATZmAuQ" name="Trigger_SE_ON" event="_ilwccNoKEeepQ-WATZmAuQ"/>
-            </transition>
-            <subvertex xmi:type="uml:State" xmi:id="_R5SIgIx_EeW55Ziaa5A1wg" name="On">
-              <region xmi:type="uml:Region" xmi:id="_XTl7wtn2EeepQ-WATZmAuQ" name="Region1"/>
-              <region xmi:type="uml:Region" xmi:id="_X9dYINn2EeepQ-WATZmAuQ" name="Region2"/>
-            </subvertex>
-            <subvertex xmi:type="uml:State" xmi:id="_TZkPgIx_EeW55Ziaa5A1wg" name="Off"/>
-            <subvertex xmi:type="uml:Pseudostate" xmi:id="_duh4MIx_EeW55Ziaa5A1wg" name="Initial1"/>
-          </region>
+          <region xmi:type="uml:Region" xmi:id="_42NFkIx-EeWcR9mTkASqaA" name="Region1"/>
         </ownedBehavior>
         <ownedReception xmi:type="uml:Reception" xmi:id="_LSY5ENoJEeepQ-WATZmAuQ" name="Off" signal="_cbQ7ANoIEeepQ-WATZmAuQ"/>
         <ownedReception xmi:type="uml:Reception" xmi:id="_LSY5EdoJEeepQ-WATZmAuQ" name="On" signal="_DLEpINoIEeepQ-WATZmAuQ"/>
@@ -96,9 +82,9 @@
         </ownedBehavior>
         <ownedReception xmi:type="uml:Reception" xmi:id="_cM138NodEeepQ-WATZmAuQ" name="Reset" signal="_Y0b6ENoPEeepQ-WATZmAuQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_nc1oAIxoEeWenow-3DQRYg" name="HouseController" classifierBehavior="_Vb4SQIyPEeW55Ziaa5A1wg" isActive="true">
+      <packagedElement xmi:type="uml:Class" xmi:id="_nc1oAIxoEeWenow-3DQRYg" name="HomeController" classifierBehavior="_Vb4SQIyPEeW55Ziaa5A1wg" isActive="true">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_91tQUNnuEeepQ-WATZmAuQ" name="temperatureManagerPort" type="_lK4WgNoIEeepQ-WATZmAuQ" aggregation="composite" isConjugated="true"/>
-        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Vb4SQIyPEeW55Ziaa5A1wg" name="HouseController$behavior$1" visibility="private">
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Vb4SQIyPEeW55Ziaa5A1wg" name="HomeController$behavior$1" visibility="private">
           <region xmi:type="uml:Region" xmi:id="_Mn2-kNoGEeepQ-WATZmAuQ" name="Region1">
             <transition xmi:type="uml:Transition" xmi:id="_W-FykNoGEeepQ-WATZmAuQ" source="_ObopUNoGEeepQ-WATZmAuQ" target="_QUdzMNoGEeepQ-WATZmAuQ"/>
             <transition xmi:type="uml:Transition" xmi:id="_6EFr8NoGEeepQ-WATZmAuQ" source="_YAd1kNoGEeepQ-WATZmAuQ" target="_QUdzMNoGEeepQ-WATZmAuQ">
